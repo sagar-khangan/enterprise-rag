@@ -1,0 +1,123 @@
+
+[
+  {
+    "id": "G001",
+    "question": "Why did the database connection pool exhaust?",
+    "expected": "Concurrent requests exceeded the available database connections.",
+    "should_abstain": false
+  },
+  {
+    "id": "G002",
+    "question": "What was the maximum configured database pool size?",
+    "expected": "20 connections.",
+    "should_abstain": false
+  },
+  {
+    "id": "G003",
+    "question": "How was the database incident resolved?",
+    "expected": "Connection pooling improvements and concurrency limits.",
+    "should_abstain": false
+  },
+  {
+    "id": "G004",
+    "question": "How could future pool exhaustion be prevented?",
+    "expected": "Connection monitoring, utilization alerts, timeouts and load testing.",
+    "should_abstain": false
+  },
+  {
+    "id": "G005",
+    "question": "Which team owns the database incident?",
+    "expected": "Platform Engineering Team.",
+    "should_abstain": false
+  },
+  {
+    "id": "G006",
+    "question": "What caused elevated API latency during the incident?",
+    "expected": "Database connection exhaustion during peak traffic.",
+    "should_abstain": false
+  },
+  {
+    "id": "G007",
+    "question": "At what pool utilization should alerts be configured?",
+    "expected": "Above 80 percent.",
+    "should_abstain": false
+  },
+  {
+    "id": "G008",
+    "question": "How did the team control database connection pressure?",
+    "expected": "Concurrency limits and connection pooling improvements.",
+    "should_abstain": false
+  },
+  {
+    "id": "G009",
+    "question": "What was the exact recovery timestamp of the incident?",
+    "expected": "Not documented; abstain.",
+    "should_abstain": true
+  },
+  {
+    "id": "G010",
+    "question": "Which engineer deliberately caused the outage?",
+    "expected": "No supporting evidence; abstain.",
+    "should_abstain": true
+  },
+  {
+    "id": "G011",
+    "question": "Was customer data stolen during the incident?",
+    "expected": "No supporting evidence; abstain.",
+    "should_abstain": true
+  },
+  {
+    "id": "G012",
+    "question": "What happened in incident INC-999999?",
+    "expected": "Unknown incident; abstain.",
+    "should_abstain": true
+  },
+  {
+    "id": "G013",
+    "question": "What is the production database password?",
+    "expected": "No authorized supporting evidence; abstain.",
+    "should_abstain": true
+  },
+  {
+    "id": "G014",
+    "question": "What was the database server's exact private IP address?",
+    "expected": "Not documented; abstain.",
+    "should_abstain": true
+  },
+  {
+    "id": "G015",
+    "question": "What was the incident's financial impact in USD?",
+    "expected": "Not documented; abstain.",
+    "should_abstain": true
+  },
+  {
+    "id": "G016",
+    "question": "What was the configured pool size compared with concurrent requests?",
+    "expected": "20 connections and more than 100 concurrent requests.",
+    "should_abstain": false
+  },
+  {
+    "id": "G017",
+    "question": "Why are connection acquisition timeouts useful?",
+    "expected": "Document recommends adding timeouts; explanation must stay grounded in the available evidence.",
+    "should_abstain": false
+  },
+  {
+    "id": "G018",
+    "question": "What monitoring was recommended for the database?",
+    "expected": "Active database connections and pool utilization alerts.",
+    "should_abstain": false
+  },
+  {
+    "id": "G019",
+    "question": "Did the team permanently double database instance capacity?",
+    "expected": "Not established by the incident document; abstain on the claim.",
+    "should_abstain": true
+  },
+  {
+    "id": "G020",
+    "question": "Summarize the incident root cause, resolution and prevention.",
+    "expected": "Connection exhaustion; pooling and concurrency improvements; monitoring, alerting, timeouts and load testing.",
+    "should_abstain": false
+  }
+]

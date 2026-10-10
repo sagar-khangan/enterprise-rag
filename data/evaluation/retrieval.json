@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": "Q001",
+    "question": "Why did database connections get exhausted?",
+    "tenant_id": "acme",
+    "allowed_groups": ["sre"],
+    "relevant_documents": {
+      "incident-001": 3
+    }
+  },
+  {
+    "id": "Q002",
+    "question": "How can we prevent connection pool exhaustion?",
+    "tenant_id": "acme",
+    "allowed_groups": ["sre", "platform"],
+    "relevant_documents": {
+      "incident-001": 2
+    }
+  },
+  {
+    "id": "Q003",
+    "question": "How do we rotate production credentials?",
+    "tenant_id": "acme",
+    "allowed_groups": ["platform"],
+    "relevant_documents": {
+      "secret-rotation-001": 3
+    }
+  }
+]

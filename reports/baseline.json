@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "mode": "baseline",
+    "total_queries": 3,
+    "mean_recall_at_5": 0.6666666666666666,
+    "mean_mrr_at_5": 0.6666666666666666,
+    "mean_ndcg_at_5": 0.6666666666666666,
+    "mean_latency_ms": 583.77
+  },
+  "queries": [
+    {
+      "id": "Q001",
+      "question": "Why did database connections get exhausted?",
+      "ranked_documents": [
+        "incident-001"
+      ],
+      "recall_at_5": 1.0,
+      "mrr_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "latency_ms": 1015.97
+    },
+    {
+      "id": "Q002",
+      "question": "How can we prevent connection pool exhaustion?",
+      "ranked_documents": [
+        "incident-001"
+      ],
+      "recall_at_5": 1.0,
+      "mrr_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "latency_ms": 368.43
+    },
+    {
+      "id": "Q003",
+      "question": "How do we rotate production credentials?",
+      "ranked_documents": [
+        "incident-001"
+      ],
+      "recall_at_5": 0.0,
+      "mrr_at_5": 0.0,
+      "ndcg_at_5": 0.0,
+      "latency_ms": 366.91
+    }
+  ]
+}

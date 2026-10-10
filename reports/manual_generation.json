@@ -1,0 +1,74 @@
+[
+  {
+    "id": "G001",
+    "question": "Why did the database connection pool exhaust?",
+    "expected": "Concurrent requests exceeded the available database connections.",
+    "should_abstain": false,
+    "answer": "The database connection pool exhausted because a sudden increase in concurrent requests exceeded the maximum pool size configured for the database connections [S1]. The maximum pool size was set to 20 connections, while the application experienced more than 100 concurrent requests [S1].",
+    "correctness": 2,
+    "citation_support": "s",
+    "abstention": "c",
+    "latency_ms": 2521.41,
+    "input_tokens": 324,
+    "output_tokens": 59,
+    "citations": [
+      {
+        "source_id": "S1",
+        "document_id": "incident-001",
+        "chunk_id": "acme:incident-001:v1:0",
+        "start_offset": 0,
+        "end_offset": 500
+      }
+    ],
+    "notes": "",
+    "evaluated_at": "2026-10-10T07:32:19.461715+00:00"
+  },
+  {
+    "id": "G002",
+    "question": "What was the maximum configured database pool size?",
+    "expected": "20 connections.",
+    "should_abstain": false,
+    "answer": "The maximum configured database pool size was 20 connections [S1].",
+    "correctness": 2,
+    "citation_support": "s",
+    "abstention": "c",
+    "latency_ms": 998.13,
+    "input_tokens": 325,
+    "output_tokens": 18,
+    "citations": [
+      {
+        "source_id": "S1",
+        "document_id": "incident-001",
+        "chunk_id": "acme:incident-001:v1:0",
+        "start_offset": 0,
+        "end_offset": 500
+      }
+    ],
+    "notes": "",
+    "evaluated_at": "2026-10-10T07:32:38.350537+00:00"
+  },
+  {
+    "id": "G003",
+    "question": "How was the database incident resolved?",
+    "expected": "Connection pooling improvements and concurrency limits.",
+    "should_abstain": false,
+    "answer": "The database incident was resolved by the engineering team introducing connection pooling improvements and configuring request concurrency limits [S1].",
+    "correctness": 2,
+    "citation_support": "s",
+    "abstention": "c",
+    "latency_ms": 1096.17,
+    "input_tokens": 323,
+    "output_tokens": 26,
+    "citations": [
+      {
+        "source_id": "S1",
+        "document_id": "incident-001",
+        "chunk_id": "acme:incident-001:v1:0",
+        "start_offset": 0,
+        "end_offset": 500
+      }
+    ],
+    "notes": "",
+    "evaluated_at": "2026-10-10T07:32:52.582785+00:00"
+  }
+]
